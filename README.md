@@ -58,3 +58,7 @@ http://52.143.167.75:15672/cli/rabbitmqadmin
 
 rabbitmq-plugins list
 rabbitmq-plugins enable PLUGIN_NAME 
+
+# Access to web console
+
+ http://{IP-ADDRESS}:15672/
