@@ -44,3 +44,8 @@ rabbitmqctl set_permissions -p / agent ".*" ".*" ".*"
       Console.ReadLine();
   }
    ```
+   
+   ## Connecting from console admin
+   
+   https://docs.bitnami.com/oci/infrastructure/rabbitmq/administration/use-admin-console/
+   https://www.rabbitmq.com/management-cli.html
