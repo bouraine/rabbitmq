@@ -45,7 +45,16 @@ rabbitmqctl set_permissions -p / agent ".*" ".*" ".*"
   }
    ```
    
-   ## Connecting from console admin
+## Connecting from console admin
    
-   https://docs.bitnami.com/oci/infrastructure/rabbitmq/administration/use-admin-console/
-   https://www.rabbitmq.com/management-cli.html
+https://docs.bitnami.com/oci/infrastructure/rabbitmq/administration/use-admin-console/
+https://www.rabbitmq.com/management-cli.html
+
+# Download rabbitmqadmin
+
+http://52.143.167.75:15672/cli/rabbitmqadmin
+
+# Enable plugins
+
+rabbitmq-plugins list
+rabbitmq-plugins enable PLUGIN_NAME 
