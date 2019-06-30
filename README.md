@@ -10,7 +10,7 @@ rabbitmqctl set_user_tags agent administrator
 rabbitmqctl set_permissions -p / agent ".*" ".*" ".*"
 ```
 
-## .Net connection and sample
+## .Net connection and end sample
 ```
  public static void Main(string[] args)
   {
