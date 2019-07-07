@@ -16,7 +16,7 @@ rabbitmqctl set_permissions -p / agent ".*" ".*" ".*"
   {
       var factory = new ConnectionFactory()
       {
-          HostName = "53.144.154.166",
+          HostName = "IP-ADDRESS",
           Port = 5672,
           UserName ="agent",
           Password = "agent"
