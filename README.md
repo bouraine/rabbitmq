@@ -52,7 +52,7 @@ https://www.rabbitmq.com/management-cli.html
 
 # Download rabbitmqadmin
 
-http://52.143.167.75:15672/cli/rabbitmqadmin
+http://{IP-ADDRESS}:15672/cli/rabbitmqadmin
 
 # Enable plugins
 
