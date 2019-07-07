@@ -50,15 +50,15 @@ rabbitmqctl set_permissions -p / agent ".*" ".*" ".*"
 https://docs.bitnami.com/oci/infrastructure/rabbitmq/administration/use-admin-console/
 https://www.rabbitmq.com/management-cli.html
 
-# Download rabbitmqadmin
+## Download rabbitmqadmin
 
 http://{IP-ADDRESS}:15672/cli/rabbitmqadmin
 
-# Enable plugins
+## Enable plugins
 
 rabbitmq-plugins list
 rabbitmq-plugins enable PLUGIN_NAME 
 
-# Access to web console
+## Access to web console
 
  http://{IP-ADDRESS}:15672/
