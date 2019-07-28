@@ -1,5 +1,11 @@
 # Rabbitmq
 
+## Run with Docker
+
+```
+docker run -d --hostname local-rabbit --name local-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password rabbitmq:3-management
+```
+
 ## Add User
 
 Here is how to create a user called agent with password agent, set it to be administrator and give it read and write access to all queues in the vhost /
