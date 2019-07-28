@@ -6,6 +6,24 @@
 docker run -d --hostname local-rabbit --name local-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password rabbitmq:3-management
 ```
 
+# Run with Docker-compose
+
+version: '2'
+
+```
+services:
+  local-rabbitmq:
+    image: "rabbitmq:3-management"
+    hostname: "local-rabbit"
+    environment: 
+      RABBITMQ_DEFAULT_USER: "user"
+      RABBITMQ_DEFAULT_PASS: "password"
+    ports:
+      - "8080:15672"
+      - "5672:5672"
+    
+```
+
 ## .Net connection and end sample
 ```
  public static void Main(string[] args)
