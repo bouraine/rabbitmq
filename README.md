@@ -1,19 +1,9 @@
 # Rabbitmq
 
-## Run with Docker
+# Run with Docker
 
 ```
 docker run -d --hostname local-rabbit --name local-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password rabbitmq:3-management
-```
-
-## Add User
-
-Here is how to create a user called agent with password agent, set it to be administrator and give it read and write access to all queues in the vhost /
-
-``` 
-rabbitmqctl add_user agent agent
-rabbitmqctl set_user_tags agent administrator
-rabbitmqctl set_permissions -p / agent ".*" ".*" ".*"
 ```
 
 ## .Net connection and end sample
@@ -50,20 +40,35 @@ rabbitmqctl set_permissions -p / agent ".*" ".*" ".*"
       Console.ReadLine();
   }
    ```
-   
-## Connecting from console admin
-   
-https://docs.bitnami.com/oci/infrastructure/rabbitmq/administration/use-admin-console/
-https://www.rabbitmq.com/management-cli.html
+
+# Azure 
+
+Choose : RabbitMQ Cluster by Bitnami
+Open 15672 and 5672 port
 
 ## Download rabbitmqadmin
 
 http://{IP-ADDRESS}:15672/cli/rabbitmqadmin
 
+## Add User
+
+Here is how to create a user called agent with password agent, set it to be administrator and give it read and write access to all queues in the vhost /
+
+``` 
+rabbitmqctl add_user agent agent
+rabbitmqctl set_user_tags agent administrator
+rabbitmqctl set_permissions -p / agent ".*" ".*" ".*"
+```
+
 ## Enable plugins
 
 rabbitmq-plugins list
 rabbitmq-plugins enable PLUGIN_NAME 
+
+## Connecting from console admin
+   
+https://docs.bitnami.com/oci/infrastructure/rabbitmq/administration/use-admin-console/
+https://www.rabbitmq.com/management-cli.html
 
 ## Access to web console
 
